@@ -1,0 +1,228 @@
+*{
+    padding: 4px 5%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    background-image: linear-gradient(to right, blue, skyblue, whitesmoke);
+    --display-info: none;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+#p1{
+    font-size: 30px;
+}
+
+/* Estilização Formulario */
+
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario input{
+    border: 2px solid;
+    text-align: center;
+    border-color: white;
+    border-radius: 30px;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    background-image: linear-gradient(to right,skyblue,whitesmoke);
+    color: white;
+}
+
+.formulario button{
+    border: 2px solid;
+    border-radius: 30px;
+    border-color: white;
+    color: white;
+    background-image: linear-gradient(to right, skyblue, whitesmoke);
+    height: 60px;
+    width: 120px;
+    margin-top: 1px;
+    margin-left: 30px;
+    transition: 0.2s;
+}
+
+.formulario button:hover{
+    transform: scale(1.05);
+}
+
+/* Estilização Principal */
+
+.info{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.principal{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.principal img{
+    transform: scale(2.5);
+}
+
+.principal #temp{
+    width: 300px;
+    font-size: 30px;
+    color: white;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.principal #descricao{
+    text-align: center;
+    width: 300px;
+    font-size: 25px;
+    color: white;
+    margin-left: 50px;
+}
+
+.outros{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.outros #humidade{
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    margin-inline: 10px;
+}
+
+.outros #vento{
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+}
+
+.outros2{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.outros2 #temp-max{
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    margin-inline: 10px;
+}
+
+.outros2 #temp-min{
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+}
+
+/* Telas Menores */
+
+@media screen and (max-width: 1015px){
+
+
+
+
+    /* Formulario */
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario input{
+        border: 2px solid;
+        text-align: center;
+        border-color: white;
+        border-radius: 30px;
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+        background-image: linear-gradient(to right,skyblue,whitesmoke);
+        margin: auto;
+        color: white;
+    }
+
+    .formulario button{
+        border: 2px solid;
+        border-radius: 30px;
+        border-color: white;
+        color: white;
+        background-image: linear-gradient(to right, skyblue, whitesmoke);
+        height: 60px;
+        width: 100px;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 0.2s;
+        font-size: 20px;
+    }
+
+    /* Principal */
+
+    .principal{
+        flex-direction: column;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+    }  
+
+    .principal img{
+        transform: scale(2);
+    }
+
+    .p2{
+        flex-direction: column;
+    }
+
+    .principal #temp{
+        width: 200px;
+        font-size: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .principal #descricao{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
